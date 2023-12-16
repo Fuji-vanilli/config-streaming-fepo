@@ -1,2 +1,6 @@
 server:
   port: 8030
+
+movie:
+  api:
+    apiKey: 08cc33bd5ae3a747598ce2ad84376e66
