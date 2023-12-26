@@ -26,6 +26,11 @@ spring:
           predicates:
             - Path= /api/movie/**
 
+jwt:
+  auth:
+    converter:
+      resource-id: movie-client
+      principal-attribute: preferred_name
 
   security:
     oauth2:
