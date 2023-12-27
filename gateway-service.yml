@@ -26,12 +26,6 @@ spring:
           predicates:
             - Path= /api/movie/**
 
-jwt:
-  auth:
-    converter:
-      resource-id: movie-client
-      principal-attribute: preferred_name
-
   security:
     oauth2:
       resourceServer:
@@ -39,3 +33,8 @@ jwt:
           issuer-uri: http://localhost:8080/realms/streaming-ms
           jwk-set-url: ${spring.security.oauth2.jwt.issuer-uri}/protocol/openid-connect/certs
 
+jwt:
+  auth:
+    converter:
+      resource-id: movie-client
+      principal-attribute: preferred_name
