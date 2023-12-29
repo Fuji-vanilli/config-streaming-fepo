@@ -7,5 +7,5 @@ eureka:
       defaultZone: http://localhost:8761/eureka
 
 movie:
-  api:
-    apiKey: 08cc33bd5ae3a747598ce2ad84376e66
+  api-key: 08cc33bd5ae3a747598ce2ad84376e66
+  url-movie: https://api.themoviedb.org/3
